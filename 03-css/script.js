@@ -179,3 +179,58 @@ function adivinharNumero(){
     }
 }
 //=========================================================================
+function mostrarDiaDaSemana(){
+    // infos
+    let numero, diaSemana 
+    // leituras
+    numero = Number(prompt("Digita o número: "))
+    // processamentos
+    if(numero == 1){
+        diaSemana = "Domingo"
+    }else if(numero == 2){
+        diaSemana = "Segunda-feira"
+    }else if(numero == 3){
+        diaSemana = "Terça-feira"
+    }else if(numero == 4){
+        diaSemana = "Quarta-feira"
+    }else if(numero == 5){
+        diaSemana = "Quinta-feira"
+    }else if(numero == 6){
+        diaSemana = "Sexta-feira"
+    }else if(numero == 7){
+        diaSemana = "Sábado"
+    }else{
+        diaSemana = "inexistente"
+    }
+    //saídas
+
+    document.getElementById("resultado").innerHTML = "O dia da semana é: " + diaSemana
+}
+//=========================================================================
+function calcularParImpar(){
+    // infos
+    let n = Number(prompt("Digite um número: "))
+    // processamentos
+    if(n % 2 == 0){
+        resultado.innerHTML = "O número " + n + " é par."
+    }else{
+        resultado.innerHTML = "O número " + n + " é ímpar."
+    }
+}
+//=========================================================================
+function converterTemperatura(){
+    // infos
+    let celsius, fahrenheit
+    // entradas
+    celsius = Number(prompt("Digite a temperatura em Celsius: "))
+    // processamentos
+    fahrenheit = (celsius * 9/5) + 32
+    // saídas
+    console.log("A temperatura em Fahrenheit é: " + fahrenheit.toFixed(2))
+    resultado.innerHTML = "A temperatura em Fahrenheit é: " + fahrenheit.toFixed(2)
+    if(fahrenheit > 68){
+        resultado.innerHTML += " Temperatura em nivel critico!"
+}else{
+    resultado.innerHTML += " Temperatura normal."
+}
+}
