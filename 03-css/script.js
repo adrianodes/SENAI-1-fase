@@ -51,6 +51,7 @@ function verificarProvisoes(){
 function donaBeteFaturamento(){
     //apresentações
 let totalBruto, premiacoes, presentes, comissoes, lucro
+let meta, prejuizo
 //leituras
 totalBruto = Number(prompt("Total bruto: R$"))
 premiacoes = Number(prompt("Premiações: R$"))
@@ -58,9 +59,18 @@ presentes = Number(prompt("Presentes: R$"))
 comissoes = Number(prompt("Comissões: R$"))
 //calculos
 lucro = totalBruto - premiacoes - presentes - comissoes
+meta = Number(prompt("Meta de hj: R$"))
 // saídas
 console.log("Lucro do dia: R$" + lucro.toFixed(2))
-resultado.innerHTML = "Lucro do dia: R$" + lucro.toFixed(2)
+resultado.innerHTML = "Lucro do dia: R$" + lucro.toFixed(2).replace(".", ",")
+if(lucro >= meta){
+    resultado.innerHTML = "<br>" + " Parabéns! Você atingiu a meta de hoje."
+}else if(lucro > 0){
+    resultado.innerHTML = "<br>" + " Que pena! Você não atingiu a meta de hoje."
+}else{
+    let prejuizo = lucro * -1
+    resultado.innerHTML = "<br>" + " Que pena! Você teve um prejuízo de R$" + prejuizo.toFixed(2).replace(".", ",") + "."
+}
 }
 //=========================================================================
 // Pé pequeno calçados
@@ -232,5 +242,26 @@ function converterTemperatura(){
         resultado.innerHTML += " Temperatura em nivel critico!"
 }else{
     resultado.innerHTML += " Temperatura normal."
+}
+}
+//=========================================================================
+function guilhermePortões(){
+    //informações
+let clt, estagiarios, pj, total
+//leitura
+clt = Number(prompt("Funcionários CLT: "))
+estagiarios = Number(prompt("Estagiários: "))
+pj = Number(prompt("Funcionários PJ: "))
+//processamentos
+total = clt + estagiarios + pj
+//saídas
+console.log("Total de DEVS: " + total)
+resultado.innerHTML += "<br>" + "Total de DEVS: " + total
+if(clt > (total * 0.51)){           
+    resultado.innerHTML += "<br>" + " Mais da metade são CLT: " + clt
+}else if(clt == (total * 0.5)){
+    resultado.innerHTML += "<br>" + " Metade são CLT: " + clt
+}else{
+    resultado.innerHTML += "<br>" + " Menos da metade são CLT: " + clt  
 }
 }
