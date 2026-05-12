@@ -1,0 +1,14 @@
+// infos
+let salario, valorPrestação
+// leituras
+salario = Number(prompt("Digite o salário: "))
+valorPrestação = Number(prompt("Digite o valor da prestação: "))
+
+// processamentos
+if(valorPrestação > salario * 0.3){
+    resultado.innerHTML = "A prestação é muito alta. Empréstimo negado."
+}else{
+    resultado.innerHTML = "Empréstimo aprovado."
+}
+
+// saídas

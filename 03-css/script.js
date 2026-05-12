@@ -265,3 +265,44 @@ if(clt > (total * 0.51)){
     resultado.innerHTML += "<br>" + " Menos da metade são CLT: " + clt  
 }
 }
+//=========================================================================
+function verificarPrestacao(){
+    // infos
+let salario, valorPrestação
+// leituras
+salario = Number(prompt("Digite o salário: "))
+valorPrestação = Number(prompt("Digite o valor da prestação: "))
+
+// processamentos
+if(valorPrestação > salario * 0.3){
+    resultado.innerHTML = "<br>" + "A prestação é muito alta. Empréstimo negado." + "<br>" + "Valor da prestação: R$" + valorPrestação.toFixed(2)
+}else{
+    resultado.innerHTML = "<br>" + "Empréstimo aprovado." + "<br>" + "Valor da prestação: R$" + valorPrestação.toFixed(2)
+}
+}
+//=========================================================================     
+function starUbers(){
+    // infos
+const velocidade = 300000
+let distancia, tempo
+// leituras
+distancia = Number(prompt("Digite a distância em km: "))
+// processamentos
+tempo = distancia / velocidade
+// saídas  
+console.log("Tempo de viagem: " + tempo.toFixed(2) + " segundos")
+resultado.innerHTML = "<br>" + "Tempo de viagem: " + tempo.toFixed(2) + " segundos"
+
+// segunda etapa
+if(tempo > 60){
+tempominutos = tempo / 60
+resultado.innerHTML += "<br>" + "Tempo de viagem: " + tempominutos.toFixed(2) + " minutos"
+}if(tempominutos > 60){
+tempohoras = tempominutos / 60
+resultado.innerHTML += "<br>" + "Tempo de viagem: " + tempohoras.toFixed(2) + " horas"
+}if(tempohoras > 60){
+tempodias = tempohoras / 24
+resultado.innerHTML += "<br>" + "Tempo de viagem: " + tempodias.toFixed(2) + " dias"
+}
+
+}
