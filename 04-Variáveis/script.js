@@ -7,6 +7,8 @@ function selecionarDino(dino) {
     let chute
     // entradas
     chute = Number(prompt("Adivinhe o número entre 1 e 10: "))
+    // TESTE GIT HUB
+    
 }
 
         //==========================================================================
