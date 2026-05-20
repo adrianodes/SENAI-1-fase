@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>var</title>
+</head>
+<body>
+    <h1>variáveis</h1>
+
+    <div class="container">
+        <h1>Dino Cassino 🦖</h1>
+        
+        <div class="status-box">
+            Caixa da Casa: <span id="caixaCasa">R$ 1000.00</span>
+        </div>
+
+        <div class="input-group">
+            <label for="inputVenda">Valor da Aposta (R$):</label>
+            <input id="inputVenda" type="text" placeholder="Ex: 50">
+        </div>
+
+        <label style="text-align: left;">Escolha o seu Dinossauro:</label>
+        <div class="dino-grid">
+            <button class="dino-btn" onclick="selecionarDino(1)">🦕 1</button>
+            <button class="dino-btn" onclick="selecionarDino(2)">🦖 2</button>
+            <button class="dino-btn" onclick="selecionarDino(3)">🦕 3</button>
+            <button class="dino-btn" onclick="selecionarDino(4)">🦖 4</button>
+            <button class="dino-btn" onclick="selecionarDino(5)">🦕 5</button>
+            <button class="dino-btn" onclick="selecionarDino(6)">🦖 6</button>
+            <button class="dino-btn" onclick="selecionarDino(7)">🦕 7</button>
+            <button class="dino-btn" onclick="selecionarDino(8)">🦖 8</button>
+            <button class="dino-btn" onclick="selecionarDino(9)">🦕 9</button>
+            <button class="dino-btn" onclick="selecionarDino(10)">🦖 10</button>
+        </div>
+
+        <button class="play-btn" id="btnJogar" onclick="jogar()" disabled>APOSTAR</button>
+
+        <div id="resultado"></div>
+    </div>
+
+
+    <hr>
+    <h2>Vendas na Harry Ploter</h2>
+    Valor da venda R$
+    <input id="inputVenda" type="text">
+    <button onclick="registrarVenda()">Cadastrar</button>
+    <p id="totalVendido"></p>
+    <div id="listaVendas"></div>
+    <hr>
+
+
+
+    emmet vs code
+    <hr>
+    <button onclick="incrementarContagem()">+</button>
+    <button onclick="somar10()">+10</button>
+    <button onclick="somar2()">+2</button>
+    <p id="p-contagem">
+        0
+    </p>
+    <button onclick="decrementarContagem()">-</button>
+    <button onclick="zerarContagem()">0</button>
+    <hr>
+    <script src="script.js"></script>
+</body>
+</html>
