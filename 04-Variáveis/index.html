@@ -9,37 +9,35 @@
 <body>
     <h1>variáveis</h1>
 
-    <div class="container">
-        <h1>Dino Cassino 🦖</h1>
-        
-        <div class="status-box">
-            Caixa da Casa: <span id="caixaCasa">R$ 1000.00</span>
-        </div>
 
-        <div class="input-group">
-            <label for="inputVenda">Valor da Aposta (R$):</label>
-            <input id="inputVenda" type="text" placeholder="Ex: 50">
-        </div>
-
-        <label style="text-align: left;">Escolha o seu Dinossauro:</label>
-        <div class="dino-grid">
-            <button class="dino-btn" onclick="selecionarDino(1)">🦕 1</button>
-            <button class="dino-btn" onclick="selecionarDino(2)">🦖 2</button>
-            <button class="dino-btn" onclick="selecionarDino(3)">🦕 3</button>
-            <button class="dino-btn" onclick="selecionarDino(4)">🦖 4</button>
-            <button class="dino-btn" onclick="selecionarDino(5)">🦕 5</button>
-            <button class="dino-btn" onclick="selecionarDino(6)">🦖 6</button>
-            <button class="dino-btn" onclick="selecionarDino(7)">🦕 7</button>
-            <button class="dino-btn" onclick="selecionarDino(8)">🦖 8</button>
-            <button class="dino-btn" onclick="selecionarDino(9)">🦕 9</button>
-            <button class="dino-btn" onclick="selecionarDino(10)">🦖 10</button>
-        </div>
-
-        <button class="play-btn" id="btnJogar" onclick="jogar()" disabled>APOSTAR</button>
-
-        <div id="resultado"></div>
+     <h2>Dados dona Bete🎲 V2</h2>
+    <div>
+         Total das rolagens: <output id="outputTotal">0</output>
+        <button onclick="resetar()">Reset</button>
     </div>
 
+    <div>
+        Última rolagem: <output id="outputUltima"></output>
+    <div>
+
+            <button onclick="rolarDado(2)">R2</button>
+            <button onclick="rolarDado(4)">R4</button>
+            <button onclick="rolarDado(6)">R6</button>
+            <button onclick="rolarDado(8)">R8</button>
+            <button onclick="rolarDado(10)">R10</button>
+            <button onclick="rolarDado(12)">R12</button>
+            <button onclick="rolarDado(20)">R20</button>
+        
+    
+    
+        </div>
+    </div>
+    <div id="historico">
+
+    </div>
+
+
+   
 
     <hr>
     <h2>Vendas na Harry Ploter</h2>
@@ -49,8 +47,32 @@
     <p id="totalVendido"></p>
     <div id="listaVendas"></div>
     <hr>
+    
+    <h2>Dados dona Bete🎲</h2>
+    <div>
+         Total das rolagens: <output id="outputTotal">0</output>
+        <button onclick="resetar()">Reset</button>
+    </div>
+
+    <div>
+        Última rolagem: <output id="outputUltima"></output>
+    </div>
+    <div>
+        <button onclick="rolarD2()">R2</button>
+        <button onclick="rolarD4()">R4</button>
+        <button onclick="rolarD6()">R6</button>
+        <button onclick="rolarD8()">R8</button>
+        <button onclick="rolarD10()">R10</button>
+        <button onclick="rolarD12()">R12</button>
+        <button onclick="rolarD20()">R20</button>
+    
 
 
+    </div>
+
+    
+    
+    
 
     emmet vs code
     <hr>
