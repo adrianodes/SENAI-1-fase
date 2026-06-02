@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(01, 66, 44);
+    background-color: #01422c;
 }
 
 h1{
@@ -15,7 +15,7 @@ h1{
 
 label{
     color: #268665;
-    padding-left: 3%;
+    margin: 10px;
 }
 
 button{
@@ -23,37 +23,34 @@ button{
     color: #a5a6aa;
     padding: 5px;
     width: 25%;
-    border-radius: 5px; 
-
+    border-radius: 5px;
 }
-
-#Btfinanca{
+#btFinanca{
     width: 40px;
 }
 
 h2{
     color: #268665;
     text-align: center;
+    /* background-color: aqua; */
 }
-
 p{
     color: #268665;
-    padding: 10px;
-    padding-left: 3%;
+    padding: 10px 30px;
 }
-
 input{
-    height: 30px;
+    height: 32px;
     border-radius: 10px;
 }
 
 #divBt{
     padding: 20px;
-    text-align: center;  
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
+
+
 }
