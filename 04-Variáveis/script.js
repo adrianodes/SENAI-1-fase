@@ -18,7 +18,7 @@
     totalRolado = 0    
     document.getElementById('outputUltima').innerHTML =""
     document.getElementById('outputTotal').innerHTML = 0
-    document.getElementById("historico").innerHTML 
+    document.getElementById("historico").innerHTML = ''
  }
 function rolarD2(){
     let dado = Math.ceil(Math.random() * 2)
