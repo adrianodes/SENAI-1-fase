@@ -1,10 +1,46 @@
-function testar(){
-    let n = parseInt(Math.random()*10)
+let dinoEscolhido = ''
+let dinoSorteado = ''
+let total = 0
 
+function testar(){
+
+    let n = parseInt(Math.random()*10)
     console.log(n);
+
+    dinoSorteado = converterParaDinossauro(n)
+    console.log(dinoSorteado);
+    
+    
 }
 
-function converterParaDino(n){
+function escolherDinossauro(n){
+    let aposta = Number(document.getElementById('inputAposta').value)
+    total += aposta
+
+    console.log(aposta);
+    console.log(total);
+    
+
+    dinoEscolhido = n
+    dinoSorteado = parseInt(Math.random()*10)
+
+    if(dinoEscolhido == dinoSorteado){
+        alert('Ganhou!!')
+    }
+
+    document.getElementById('outDinoEscolhido').innerHTML = converterParaDinossauro(dinoEscolhido)
+    document.getElementById('outDinoSorteado').innerHTML = converterParaDinossauro(dinoSorteado)
+
+
+    console.log(dinoEscolhido);
+    console.log(dinoSorteado);
+
+    console.log(converterParaDinossauro(dinoEscolhido));
+    console.log(converterParaDinossauro(dinoSorteado));
+    
+    
+}
+function converterParaDinossauro(n){
     if(n == 0){
      dino = "Espinossauro"
     }else if(n == 1){
