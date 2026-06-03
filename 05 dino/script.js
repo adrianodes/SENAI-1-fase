@@ -8,8 +8,7 @@ function testar(){
     console.log(n);
 
     dinoSorteado = converterParaDinossauro(n)
-    console.log(dinoSorteado);
-    
+    console.log(dinoSorteado);  
     
 }
 
@@ -25,7 +24,10 @@ function escolherDinossauro(n){
     dinoSorteado = parseInt(Math.random()*10)
 
     if(dinoEscolhido == dinoSorteado){
+        let premio = aposta * 2
         alert('Ganhou!!')
+    }else{
+        alert("Perdeu")
     }
 
     document.getElementById('outDinoEscolhido').innerHTML = converterParaDinossauro(dinoEscolhido)
@@ -62,4 +64,7 @@ function converterParaDinossauro(n){
     }else if(n == 9){
      dino = "carnotauro"
 }
+ return dino
+    // console.log(dino);
+
 }

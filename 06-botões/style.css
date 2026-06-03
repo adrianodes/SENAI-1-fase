@@ -1,0 +1,39 @@
+.btn1{
+    background-color: rgb(132, 2, 147);
+    padding: 12px;
+    border-radius: 6px;
+    border: 20px;
+    color: rgb(237, 232, 232);
+    font-size: 16px;
+}
+
+.btn1:hover {
+    background-color: rgb(177, 68, 220);
+    box-shadow: #3b0980 6px 5px 10px 2px;
+}
+
+.btn2{
+    background-color: rgb(3, 16, 209);
+    padding: 12px;
+    border-radius: 6px;
+    border: 20px;
+    color: rgb(237, 232, 232);
+    font-size: 16px;
+}
+
+.btn2:hover{
+    transform: scale(1.1);
+}
+.btn3{
+    background-color: rgb(3, 99, 8);
+    padding: 12px;
+    border-radius: 6px;
+    border: 20px;
+    color: rgb(237, 232, 232);
+    font-size: 16px;
+}
+.btn3:hover{
+    background-color: rgb(82, 231, 8);
+    transform: scale(1.5) rotate(-20deg);
+    box-shadow: #098064 6px 5px 10px 2px;
+}
